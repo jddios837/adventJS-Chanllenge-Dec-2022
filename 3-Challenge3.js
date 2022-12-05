@@ -13,10 +13,11 @@
 const packOfGifts = ["book", "doll", "ball"]
 const reindeers = ["dasher", "dancer"]
 
-// function distributeGifts(packOfGifts, reindeers) {
-//     const d = reindeers.reduce((sum, e) => sum + 2 * e.length, 0) / packOfGifts.reduce((sum, e) => sum + e.length, 0);
-//     return Number.isInteger(d) ? d : Number.parseInt(d.toString());
-// }
+function distributeGifts(packOfGifts, reindeers) {
+    // const d = reindeers.reduce((sum, e) => sum + 2 * e.length, 0) / packOfGifts.reduce((sum, e) => sum + e.length, 0);
+    // return Number.isInteger(d) ? d : Number.parseInt(d.toString());
+    return parseInt(reindeers.reduce((sum, e) => sum + 2 * e.length, 0) / packOfGifts.reduce((sum, e) => sum + e.length, 0));
+}
 
 // OTHER SOLUTION FROM OTHER MEMBER
 // function distributeGifts(packOfGifts, reindeers) {
